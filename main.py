@@ -5,7 +5,7 @@ from pydantic import BaseModel
 
 import uvicorn
 
-from module.aws import sqs
+from module.aws import SQS
 
 app = FastAPI()
 logger = logging.getLogger('root')
@@ -25,7 +25,7 @@ def hello_world():
 @app.post("/scrap/place")
 def scrap_place(item: Item):
     logger.info('Request >>> Scrap Place : {}'.format(item))
-    sqs().produce(dict(item))
+    SQS().produce(dict(item))
     return 'Accepted Request'
 
 

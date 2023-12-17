@@ -2,7 +2,7 @@ import boto3
 import json
 
 
-class sqs:
+class SQS:
     def __init__(self):
         endpoint_url = "http://192.168.0.200:4566"
         sqs = boto3.resource('sqs',
