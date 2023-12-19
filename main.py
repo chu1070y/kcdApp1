@@ -2,6 +2,7 @@ import logging
 
 from fastapi import FastAPI
 from pydantic import BaseModel
+from typing import Optional
 
 import uvicorn
 
@@ -14,6 +15,7 @@ logger = logging.getLogger('root')
 class Item(BaseModel):
     operation: str
     key: str
+    mode: Optional[str] = None
 
 
 @app.get("/")

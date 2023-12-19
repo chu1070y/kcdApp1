@@ -1,4 +1,4 @@
-[2023-12-17 15:54:17,789.789] [INFO] Started server process [20156]
-[2023-12-17 15:54:17,789.789] [INFO] Waiting for application startup.
-[2023-12-17 15:54:17,790.790] [INFO] Application startup complete.
-[2023-12-17 15:54:17,790.790] [INFO] Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+[2023-12-19 16:09:27,137.137] [INFO] Started server process [11756]
+[2023-12-19 16:09:27,137.137] [INFO] Waiting for application startup.
+[2023-12-19 16:09:27,137.137] [INFO] Application startup complete.
+[2023-12-19 16:09:27,137.137] [INFO] Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
