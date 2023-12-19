@@ -15,6 +15,7 @@ services:
       - '4566:4566'
   kcdapp1:
     image: kcdapp1
+    container_name: 'kcdapp1'
     command: python3 main.py
     ports:
       - "8000:8000"
