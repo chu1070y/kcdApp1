@@ -1,5 +1,7 @@
 # 실행방법
 
+> module/aws에 ip주소 변경 필요
+
 ##### 도커 빌드
 
 ```docker build -t kcdapp1 .```
