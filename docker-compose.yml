@@ -13,6 +13,8 @@ services:
       - AWS_DEFAULT_REGION=us-east-1
     ports:
       - '4566:4566'
+    networks:
+      - kcd_network
   kcdapp1:
     image: kcdapp1
     container_name: 'kcdapp1'
@@ -21,3 +23,8 @@ services:
       - "8000:8000"
     depends_on:
       - aws
+    networks:
+      - kcd_network
+networks:
+  kcd_network:
+    driver: bridge
